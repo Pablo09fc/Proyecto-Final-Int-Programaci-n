@@ -1,0 +1,26 @@
+subcarpeta mecanica general
+String cabezote 
+double longitud entrada de clutch
+String tipo torque llantas
+
+
+subcarpeta factura
+int iva
+double subtotal
+double monto total
+public void calclulo monto(double subtotal, int iva){
+
+subcarpeta clientes
+String Nombre
+int cedula
+Public void Message(){
+JOptionPane.showMessageDialog(null" bienvenido"+Nombre+"cedula"+cedula);
+{
+
+Main = taller
+subcarpeta servicios
+public int revision 
+public string modelo
+public double costo 
+public servicios (String modelo, int revision, double costo)
+set y get de revision modelo costo
