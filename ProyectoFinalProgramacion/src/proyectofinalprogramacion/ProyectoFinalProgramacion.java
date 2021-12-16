@@ -2,8 +2,8 @@
 U Fidelitas
 Introducción a la Programación 
 Pablo Fernández Calderón
-12/2
-Programa: Aplicación de conocimientos II.
+16/12
+Programa: Taller Goldoni (Proyecto final de programación).
  */
 package proyectofinalprogramacion;
 
