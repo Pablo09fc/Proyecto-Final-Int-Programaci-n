@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
 
 public class ProyectoFinalProgramacion 
 {
-    public int [][] Precios=new int [3][3];
+    public int [][] Precios=new int [3][3]; //Se hace un arreglo para almacenar los precios de los productos
     private Scanner FIDE= new Scanner (System.in);
     
    
@@ -26,7 +26,7 @@ public class ProyectoFinalProgramacion
             JOptionPane.showMessageDialog(null, "Bienvenido usuario "+nombre+" "+apellidos+" , cedula "+cedula);
         }
         
-        public void Precios()
+        public void Precios()//En esta clase se imprimen los precios de los productos
         {
             JOptionPane.showMessageDialog(null, "A continuación se le mostrará la lista de precios de nuestros productos (estos precios cuenta con el servicio de instalación incluido y sin iva)");
             
@@ -43,10 +43,10 @@ public class ProyectoFinalProgramacion
             System.out.println();
             System.out.println();
             
-            JOptionPane.showMessageDialog(null, "Ahora se dirigirá a elegir los productos que desea, puede comprar en commbo o solamente un producto por ingreso a la página");
+            JOptionPane.showMessageDialog(null, "Ahora se dirigirá a elegir los productos que desea, puede comprar en commbo o solamente un producto por ingreso");
         }
         
-        public void Factura()
+        public void Factura()//Se fijan los precios de los productos dentro del arreglo
         {
             Precios [0][0]=100000;
             Precios [0][1]=150000;
@@ -68,6 +68,7 @@ public class ProyectoFinalProgramacion
             int Torque2= Precios [2][1];
             int Torque3= Precios [2][2];
             
+            //Se le muestra al usuario los combos disponibles y los productos solitarios para la venta
             double iva=0.13;
             JOptionPane.showMessageDialog(null, "Eliga una de las siguientes opciones para luego mostrarle su factura");
             System.out.println("1. Cabezote Mitsubichi, Entrada de clutch para Mitsubishi y Torque para llantas Mitsubichi");
@@ -86,7 +87,8 @@ public class ProyectoFinalProgramacion
             System.out.println();
             
             int opcion=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el número de la opción requerida "));
-       
+            
+       //Se utilizan los if para mostrar la factura correspondiente a la opción elegida por el usuario
             if (opcion==1)
             {
                 int subtotal1= (Cabezote1+Longitud1+Torque1);
@@ -221,11 +223,11 @@ public class ProyectoFinalProgramacion
             }
         }
         
-        public void Salir()
+        public void Salir() //Se da la salida del sistema luego de haberse entregado la factura
             {
                JOptionPane.showMessageDialog(null,"Gracias por su compra en el Taller Goldoni"); 
             }
-        public static void main(String[] args)
+        public static void main(String[] args)//Se colocan en orden todas las clases utilizadas en el programa para darles uso continuo
         {
             ProyectoFinalProgramacion FIDE1=new ProyectoFinalProgramacion();
             FIDE1.Datos_Personales();
