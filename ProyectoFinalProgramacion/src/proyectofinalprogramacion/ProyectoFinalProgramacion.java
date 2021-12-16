@@ -51,12 +51,7 @@ public class ProyectoFinalProgramacion
         public static void Productos()//Se utiliza una clase externa para realizar este apartado
         {
             Productos FIDE1=new Productos();
-            FIDE1.Llenado_Matriz();
-            FIDE1.Recorre_Matriz();
-            FIDE1.Notas_IParcial();
-            FIDE1.Notas_IIParcial();
-            FIDE1.Notas_IIIParcial();
-            FIDE1.mayorNota();
+          
         }
         
         public static void Salir()
